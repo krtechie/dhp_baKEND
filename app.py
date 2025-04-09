@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Load single CSV file
 def load_data():
-    df = pd.read_csv('data/datacsv.csv')
+    df = pd.read_csv('datacsv.csv')
 
     # Handle column headers (adjust if needed)
     if 'Tag' not in df.columns or 'Published DateTime' not in df.columns:
